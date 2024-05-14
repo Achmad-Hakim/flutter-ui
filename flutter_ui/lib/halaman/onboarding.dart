@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/halaman/halaman_utama.dart';
 
 class Onboarding extends StatelessWidget {
   @override
@@ -75,7 +76,13 @@ class Onboarding extends StatelessWidget {
                       color: Color(0xFF674aEF),
                       borderRadius: BorderRadius.circular(10),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => HalamanUtama(),
+                              ));
+                        },
                         child: Container(
                           padding: EdgeInsets.symmetric(
                               vertical: 15, horizontal: 80),
