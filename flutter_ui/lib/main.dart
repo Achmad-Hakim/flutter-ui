@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/halaman/halaman_utama.dart';
+import 'package:flutter_ui/halaman/onboarding.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: HalamanUtama(),
+      home: Onboarding(),
     );
   }
 }
