@@ -200,7 +200,24 @@ class HalamanUtama extends StatelessWidget {
                                 height: 100,
                               ),
                             ),
-                            SizedBox()
+                            SizedBox(height: 10),
+                            Text(
+                              imgList[index],
+                              style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.black.withOpacity(0.6),
+                              ),
+                            ),
+                            SizedBox(height: 10),
+                            Text(
+                              "55 Video",
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.black.withOpacity(0.5),
+                              ),
+                            ),
                           ],
                         ),
                       ),
@@ -210,6 +227,21 @@ class HalamanUtama extends StatelessWidget {
               ],
             ),
           ),
+        ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        showUnselectedLabels: true,
+        iconSize: 32,
+        selectedItemColor: Color(0xFF674AEF),
+        selectedFontSize: 18,
+        unselectedItemColor: Colors.grey,
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.assignment), label: 'Kursus'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.favorite), label: 'Keranjang'),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Akun'),
         ],
       ),
     );
